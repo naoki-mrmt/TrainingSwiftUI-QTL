@@ -41,7 +41,7 @@ struct LifeCycleSampleView: View {
                     print(TextConst.unknown)
                 }
             }
-            .toast(isPresenting: $showOnAppear){
+            .toast(isPresenting: $showOnAppear) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.onAppear)
             }
             .toast(isPresenting: $showOnDisappear) {
