@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		673928802E12C8A0AD368E9B /* Pods_Task1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C53E9DEFECFB0549CBE68A /* Pods_Task1.framework */; };
+		8865A3D328FF81E4002B13B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8865A3D228FF81E4002B13B0 /* Settings.bundle */; };
 		8883350C28F6D71C00DC0910 /* Task1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883350B28F6D71C00DC0910 /* Task1App.swift */; };
 		8883351028F6D71D00DC0910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8883350F28F6D71D00DC0910 /* Assets.xcassets */; };
 		8883351328F6D71D00DC0910 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8883351228F6D71D00DC0910 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1DE0F8D61DB1951E181F548D /* Pods-Task1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task1.release.xcconfig"; path = "Target Support Files/Pods-Task1/Pods-Task1.release.xcconfig"; sourceTree = "<group>"; };
+		8865A3D228FF81E4002B13B0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8883350828F6D71C00DC0910 /* Task1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8883350B28F6D71C00DC0910 /* Task1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1App.swift; sourceTree = "<group>"; };
 		8883350F28F6D71D00DC0910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				8883350F28F6D71D00DC0910 /* Assets.xcassets */,
 				8883351128F6D71D00DC0910 /* Preview Content */,
 				88D8AD1828F8EB13009F6D75 /* Const.swift */,
+				8865A3D228FF81E4002B13B0 /* Settings.bundle */,
 			);
 			path = Task1;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 				8883350528F6D71C00DC0910 /* Frameworks */,
 				8883350628F6D71C00DC0910 /* Resources */,
 				88633F8A28FD89AE007B7596 /* Run Swiftlint */,
+				8865A3D128FF7ACA002B13B0 /* Run LicensePlist */,
 			);
 			buildRules = (
 			);
@@ -163,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8883351328F6D71D00DC0910 /* Preview Assets.xcassets in Resources */,
+				8865A3D328FF81E4002B13B0 /* Settings.bundle in Resources */,
 				8883351028F6D71D00DC0910 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +191,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8865A3D128FF7ACA002B13B0 /* Run LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run LicensePlist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
 		};
 		DA66EFC2EBF0FC0FA4A2D403 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -349,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Task1/Preview Content\"";
-				DEVELOPMENT_TEAM = H2XW5KQ42M;
+				DEVELOPMENT_TEAM = J8NY99LH26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -379,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Task1/Preview Content\"";
-				DEVELOPMENT_TEAM = H2XW5KQ42M;
+				DEVELOPMENT_TEAM = J8NY99LH26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
