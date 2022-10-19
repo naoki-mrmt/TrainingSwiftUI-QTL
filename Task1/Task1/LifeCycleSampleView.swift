@@ -10,53 +10,52 @@ import AlertToast
 
 struct LifeCycleSampleView: View {
     @Environment(\.scenePhase) private var scenePhase
-    @State private var showOnAppear = false
-    @State private var showOnDisappear = false
-    @State private var showActive = false
-    @State private var showInactive = false
-    @State private var showBackground = false
+    @State private var isShowingOnAppear = false
+    @State private var isShowingOnDisappear = false
+    @State private var isShowingActive = false
+    @State private var isShowingInactive = false
+    @State private var isShowingBackground = false
 
     var body: some View {
         Text(TextConst.appName)
             .onAppear {
                 print(TextConst.onAppear)
-                showOnAppear.toggle()
+                isShowingOnAppear.toggle()
             }
             .onDisappear {
                 print(TextConst.onDisappear)
-                showOnDisappear.toggle()
+                isShowingOnDisappear.toggle()
             }
             .onChange(of: scenePhase) {
                 switch $0 {
                 case .active:
                     print(TextConst.active)
-                    showActive.toggle()
+                    isShowingActive.toggle()
                 case .inactive:
                     print(TextConst.inactive)
-                    showInactive.toggle()
+                    isShowingInactive.toggle()
                 case .background:
                     print(TextConst.background)
-                    showBackground.toggle()
+                    isShowingBackground.toggle()
                 @unknown default:
                     print(TextConst.unknown)
                 }
             }
-            .toast(isPresenting: $showOnAppear) {
+            .toast(isPresenting: $isShowingOnAppear) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.onAppear)
             }
-            .toast(isPresenting: $showOnDisappear) {
+            .toast(isPresenting: $isShowingOnDisappear) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.onDisappear)
             }
-            .toast(isPresenting: $showActive) {
+            .toast(isPresenting: $isShowingActive) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.active)
             }
-            .toast(isPresenting: $showInactive) {
+            .toast(isPresenting: $isShowingInactive) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.inactive)
             }
-            .toast(isPresenting: $showBackground) {
+            .toast(isPresenting: $isShowingBackground) {
                 AlertToast(displayMode: .hud, type: .regular, title: TextConst.background)
             }
-
     }
 }
 
