@@ -8,5 +8,6 @@ install! 'cocoapods',
 
 target 'Task1' do
   pod 'SwiftLint'
+  pod 'LicensePlist'
 
 end
