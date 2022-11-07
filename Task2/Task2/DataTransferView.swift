@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationLinkView: View {
+struct DataTransferView: View {
     let value: String
 
     var body: some View {
@@ -17,6 +17,6 @@ struct NavigationLinkView: View {
 
 struct NavigationLinkView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationLinkView(value: "value")
+        DataTransferView(value: "value")
     }
 }
