@@ -9,19 +9,19 @@ import SwiftUI
 
 struct DataTransferSampleView: View {
     // MARK: - Property Wrappers
-    @State private var value = ""
+    @State private var passValue = ""
     @State private var isShowingModalView = false
     @State private var isShowingHalfModalView = false
-    @State private var hoge = ""
+    @State private var getValue = ""
 
     // MARK: - Body
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text(TextConst.dataTransfer)) {
-                    TextField("値を入力してください", text: $value)
+                    TextField("値を入力してください", text: $passValue)
                     NavigationLink {
-                        DataTransferView(value: value)
+                        DataTransferView(value: passValue)
                     } label: {
                         Text(TextConst.navigationLink)
                     }
@@ -31,7 +31,7 @@ struct DataTransferSampleView: View {
                         Text(TextConst.halfModal).foregroundColor(Color.black)
                     }
                     .sheet(isPresented: $isShowingHalfModalView) {
-                        Text(value)
+                        Text(passValue)
                             .presentationDetents([.medium, .large])
                     }
                     Button {
@@ -40,14 +40,14 @@ struct DataTransferSampleView: View {
                         Text(TextConst.present).foregroundColor(Color.black)
                     }
                     .sheet(isPresented: $isShowingModalView) {
-                        DataTransferView(value: value)
+                        DataTransferView(value: passValue)
                     }
                 }
                 Section(header: Text(TextConst.dataBack)) {
-                    Text("戻された値: \(hoge)")
-                    Text(TextConst.returnedValue + hoge)
+                    Text("戻された値: \(getValue)")
+                    Text(TextConst.returnedValue + getValue)
                     NavigationLink {
-                        DataBackView(value: $hoge)
+                        DataBackView(value: $getValue)
                     } label: {
                         Text(TextConst.navigationLink)
                     }
