@@ -13,6 +13,8 @@ struct DataBackView: View {
 
     // MARK: - Body
     var body: some View {
-        TextField("値を入力してください", text: $value)
+        TextField(TextConst.inputValue, text: $value)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding(16.0)
     }
 }
