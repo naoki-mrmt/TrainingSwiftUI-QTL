@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct DataBackView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    // MARK: - Property Wrappers
+    @Binding var value: String
 
-struct DataBackView_Previews: PreviewProvider {
-    static var previews: some View {
-        DataBackView()
+    // MARK: - Body
+    var body: some View {
+        TextField("値を入力してください", text: $value)
     }
 }
