@@ -18,17 +18,17 @@ struct DataTransferSampleView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("値渡し")) {
+                Section(header: Text(TextConst.dataTransfer)) {
                     TextField("値を入力してください", text: $value)
                     NavigationLink {
                         DataTransferView(value: value)
                     } label: {
-                        Text("NavigationLink")
+                        Text(TextConst.navigationLink)
                     }
                     Button {
                         isShowingHalfModalView.toggle()
                     } label: {
-                        Text("HalfModal")
+                        Text(TextConst.halfModal).foregroundColor(Color.black)
                     }
                     .sheet(isPresented: $isShowingHalfModalView) {
                         Text(value)
@@ -37,32 +37,33 @@ struct DataTransferSampleView: View {
                     Button {
                         isShowingModalView.toggle()
                     } label: {
-                        Text("Present")
+                        Text(TextConst.present).foregroundColor(Color.black)
                     }
                     .sheet(isPresented: $isShowingModalView) {
                         DataTransferView(value: value)
                     }
                 }
-                Section(header: Text("値戻し")) {
+                Section(header: Text(TextConst.dataBack)) {
                     Text("戻された値: \(hoge)")
+                    Text(TextConst.returnedValue + hoge)
                     NavigationLink {
                         DataBackView(value: $hoge)
                     } label: {
-                        Text("NavigationLink")
+                        Text(TextConst.navigationLink)
                     }
                 }
-                Section(header: Text("ライセンス表示")) {
+                Section(header: Text(TextConst.displayLicense)) {
                     Button(action: {
                         // swiftlint:disable force_unwrapping
                         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
                         // swiftlint:enable force_unwrapping
                     }, label: {
-                        Text("ライセンス").foregroundColor(Color.black)
+                        Text(TextConst.license).foregroundColor(Color.black)
                     }) //: Button
                 }
             } //: List
             .listStyle(GroupedListStyle())
-            .navigationBarTitle("DataTransferSample")
+            .navigationBarTitle(TextConst.appTitle)
         } //: NavigationView
     }
 }
