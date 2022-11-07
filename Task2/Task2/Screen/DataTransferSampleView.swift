@@ -44,7 +44,6 @@ struct DataTransferSampleView: View {
                     }
                 }
                 Section(header: Text(TextConst.dataBack)) {
-                    Text("戻された値: \(getValue)")
                     Text(TextConst.returnedValue + getValue)
                     NavigationLink {
                         DataBackView(value: $getValue)
