@@ -106,6 +106,7 @@
 				88D9E753291B25A200FEB37C /* Frameworks */,
 				88D9E754291B25A200FEB37C /* Resources */,
 				88D9E769291B2B0C00FEB37C /* Run LicensePlist */,
+				88D9E76A291B2B6200FEB37C /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -202,6 +203,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
+		};
+		88D9E76A291B2B6200FEB37C /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint --fix\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
