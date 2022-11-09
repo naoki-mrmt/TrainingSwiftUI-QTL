@@ -1,7 +1,16 @@
-# Task1
-> 画面間でデータの受け渡しをしよう
-> Top画面で入力したテキストをA画面で表示
-> B画面で入力したデータをTop画面に戻して表示する
-
+# Task2
 ## Issue
-- [#12](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues12)
+- [#12](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/12)
+
+## 環境構築
+### 事前準備
+- Bundlerをインストール
+    - ```gem install bundler```
+    - [rbenv](https://github.com/rbenv/rbenv) が入ってると楽
+- CocoaPodsのインストール
+    - ```bundle install```
+ 
+### xcworkspaceの生成
+- ```make```
+    - 中身 
+        - ```bundle exec pod install```
