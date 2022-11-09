@@ -1,3 +1,3 @@
 .PHONY:
 generate:
-	pod install
+	bundle exec pod install
