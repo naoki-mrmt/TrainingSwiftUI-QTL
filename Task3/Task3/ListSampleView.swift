@@ -17,7 +17,7 @@ struct ListSampleView: View {
                 }
             } //: List
             .navigationTitle(AppConst.Text.title)
-        }
+        } //: NavigationView
     }
 }
 
