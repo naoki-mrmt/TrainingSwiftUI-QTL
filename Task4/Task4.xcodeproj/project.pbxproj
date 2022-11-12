@@ -13,6 +13,8 @@
 		88227191291FE70B00F34B92 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88227190291FE70B00F34B92 /* Event.swift */; };
 		88227195291FECFD00F34B92 /* ConnpassAPIURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88227194291FECFD00F34B92 /* ConnpassAPIURL.plist */; };
 		88227197291FED5A00F34B92 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88227196291FED5A00F34B92 /* Request.swift */; };
+		8822719C291FF0C600F34B92 /* URLPlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719B291FF0C600F34B92 /* URLPlistManager.swift */; };
+		8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719D291FF15B00F34B92 /* ConnpassAPI.swift */; };
 		88B79E77291C82A800DE2266 /* Task4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E76291C82A800DE2266 /* Task4App.swift */; };
 		88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7A291C82A900DE2266 /* Assets.xcassets */; };
 		88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		88227190291FE70B00F34B92 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		88227194291FECFD00F34B92 /* ConnpassAPIURL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConnpassAPIURL.plist; sourceTree = "<group>"; };
 		88227196291FED5A00F34B92 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8822719B291FF0C600F34B92 /* URLPlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPlistManager.swift; sourceTree = "<group>"; };
+		8822719D291FF15B00F34B92 /* ConnpassAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassAPI.swift; sourceTree = "<group>"; };
 		88B79E73291C82A800DE2266 /* Task4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B79E76291C82A800DE2266 /* Task4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4App.swift; sourceTree = "<group>"; };
 		88B79E7A291C82A900DE2266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		88227189291FE47200F34B92 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8822719A291FEE3600F34B92 /* API */,
 				88227199291FEDFD00F34B92 /* Entity */,
 			);
 			path = Model;
@@ -105,6 +110,7 @@
 		88227198291FEDEE00F34B92 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				8822719B291FF0C600F34B92 /* URLPlistManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -116,6 +122,14 @@
 				88227190291FE70B00F34B92 /* Event.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		8822719A291FEE3600F34B92 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8822719D291FF15B00F34B92 /* ConnpassAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		88B79E6A291C82A800DE2266 = {
@@ -316,11 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8822719C291FF0C600F34B92 /* URLPlistManager.swift in Sources */,
 				88227191291FE70B00F34B92 /* Event.swift in Sources */,
 				8822718F291FE6E300F34B92 /* Events.swift in Sources */,
 				88227197291FED5A00F34B92 /* Request.swift in Sources */,
 				8822718D291FE52D00F34B92 /* EventListView.swift in Sources */,
 				88B79E77291C82A800DE2266 /* Task4App.swift in Sources */,
+				8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
