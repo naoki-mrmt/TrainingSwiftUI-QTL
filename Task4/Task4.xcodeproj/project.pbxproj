@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7535844A38EC65615CFD5609 /* Pods_Task4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8578372490DC15DA07E90BBE /* Pods_Task4.framework */; };
+		8822718D291FE52D00F34B92 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822718C291FE52D00F34B92 /* EventListView.swift */; };
+		8822718F291FE6E300F34B92 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822718E291FE6E300F34B92 /* Events.swift */; };
+		88227191291FE70B00F34B92 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88227190291FE70B00F34B92 /* Event.swift */; };
 		88B79E77291C82A800DE2266 /* Task4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E76291C82A800DE2266 /* Task4App.swift */; };
-		88B79E79291C82A800DE2266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E78291C82A800DE2266 /* ContentView.swift */; };
 		88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7A291C82A900DE2266 /* Assets.xcassets */; };
 		88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */; };
 		88B79E85291C83C600DE2266 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E84291C83C600DE2266 /* Settings.bundle */; };
@@ -17,9 +19,11 @@
 
 /* Begin PBXFileReference section */
 		8578372490DC15DA07E90BBE /* Pods_Task4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8822718C291FE52D00F34B92 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		8822718E291FE6E300F34B92 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		88227190291FE70B00F34B92 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		88B79E73291C82A800DE2266 /* Task4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B79E76291C82A800DE2266 /* Task4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4App.swift; sourceTree = "<group>"; };
-		88B79E78291C82A800DE2266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88B79E7A291C82A900DE2266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88B79E84291C83C600DE2266 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -39,6 +43,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88227185291FE44200F34B92 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		88227186291FE45800F34B92 /* URLPlist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLPlist;
+			sourceTree = "<group>";
+		};
+		88227187291FE46300F34B92 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8822718B291FE51D00F34B92 /* EventList */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		88227188291FE46C00F34B92 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		88227189291FE47200F34B92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8822718E291FE6E300F34B92 /* Events.swift */,
+				88227190291FE70B00F34B92 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8822718A291FE47B00F34B92 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88B79E76291C82A800DE2266 /* Task4App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8822718B291FE51D00F34B92 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				8822718C291FE52D00F34B92 /* EventListView.swift */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
 		88B79E6A291C82A800DE2266 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +118,12 @@
 		88B79E75291C82A800DE2266 /* Task4 */ = {
 			isa = PBXGroup;
 			children = (
-				88B79E76291C82A800DE2266 /* Task4App.swift */,
-				88B79E78291C82A800DE2266 /* ContentView.swift */,
+				8822718A291FE47B00F34B92 /* Application */,
+				88227189291FE47200F34B92 /* Model */,
+				88227188291FE46C00F34B92 /* Protocol */,
+				88227187291FE46300F34B92 /* Screen */,
+				88227186291FE45800F34B92 /* URLPlist */,
+				88227185291FE44200F34B92 /* Utility */,
 				88B79E7A291C82A900DE2266 /* Assets.xcassets */,
 				88B79E7C291C82A900DE2266 /* Preview Content */,
 				88B79E84291C83C600DE2266 /* Settings.bundle */,
@@ -231,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B79E79291C82A800DE2266 /* ContentView.swift in Sources */,
+				88227191291FE70B00F34B92 /* Event.swift in Sources */,
+				8822718F291FE6E300F34B92 /* Events.swift in Sources */,
+				8822718D291FE52D00F34B92 /* EventListView.swift in Sources */,
 				88B79E77291C82A800DE2266 /* Task4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
