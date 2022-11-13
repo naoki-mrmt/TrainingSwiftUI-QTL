@@ -15,7 +15,7 @@ struct EventListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.events) {
-                Text($0.title)
+                EventCellView(event: $0)
             } //: List
             .onAppear {
                 viewModel.fetchEvent()
