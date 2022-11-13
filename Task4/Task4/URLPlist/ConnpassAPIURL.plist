@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BaseURL</key>
-	<string>https://connpass.com/api/v1/event</string>
+	<string>https://connpass.com/api/v1</string>
 	<key>EvantAPIPath</key>
 	<string>/event</string>
 </dict>
