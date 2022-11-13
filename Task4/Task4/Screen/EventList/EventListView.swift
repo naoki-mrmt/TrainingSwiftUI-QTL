@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct EventListView: View {
+    // MARK: - Property Wrappers
+    @ObservedObject private var viewModel = EventViewModel()
+
+    // MARK: - Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(viewModel.events) {
+                Text($0.title)
+            } //: List
+            .onAppear {
+                viewModel.fetchEvent()
+            }
+            .listStyle(.automatic)
+            .navigationBarTitle("Event")
+        } //: NavigationView
     }
 }
 
