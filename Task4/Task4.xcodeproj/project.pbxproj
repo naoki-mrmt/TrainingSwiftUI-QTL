@@ -17,6 +17,7 @@
 		8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719D291FF15B00F34B92 /* ConnpassAPI.swift */; };
 		882271A0291FF28700F34B92 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719F291FF28700F34B92 /* NetworkManager.swift */; };
 		882271A2291FF48900F34B92 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271A1291FF48900F34B92 /* EventListViewModel.swift */; };
+		882271A92920D42800F34B92 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271A82920D42800F34B92 /* WebView.swift */; };
 		88B79E77291C82A800DE2266 /* Task4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E76291C82A800DE2266 /* Task4App.swift */; };
 		88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7A291C82A900DE2266 /* Assets.xcassets */; };
 		88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		8822719D291FF15B00F34B92 /* ConnpassAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassAPI.swift; sourceTree = "<group>"; };
 		8822719F291FF28700F34B92 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		882271A1291FF48900F34B92 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		882271A82920D42800F34B92 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		88B79E73291C82A800DE2266 /* Task4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B79E76291C82A800DE2266 /* Task4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4App.swift; sourceTree = "<group>"; };
 		88B79E7A291C82A900DE2266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		88227187291FE46300F34B92 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				882271A62920D3F100F34B92 /* Common */,
 				8822718B291FE51D00F34B92 /* EventList */,
 			);
 			path = Screen;
@@ -136,6 +139,22 @@
 				8822719D291FF15B00F34B92 /* ConnpassAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		882271A62920D3F100F34B92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				882271A72920D40E00F34B92 /* UIViewRepresentable */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		882271A72920D40E00F34B92 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				882271A82920D42800F34B92 /* WebView.swift */,
+			);
+			path = UIViewRepresentable;
 			sourceTree = "<group>";
 		};
 		88B79E6A291C82A800DE2266 = {
@@ -337,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8822719C291FF0C600F34B92 /* URLPlistManager.swift in Sources */,
+				882271A92920D42800F34B92 /* WebView.swift in Sources */,
 				88227191291FE70B00F34B92 /* Event.swift in Sources */,
 				8822718F291FE6E300F34B92 /* Events.swift in Sources */,
 				88227197291FED5A00F34B92 /* Request.swift in Sources */,
