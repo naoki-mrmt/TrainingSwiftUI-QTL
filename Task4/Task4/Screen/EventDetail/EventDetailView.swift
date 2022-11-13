@@ -14,6 +14,14 @@ struct EventDetailView: View {
     // MARK: - Body
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink {
+            SafariView(
+                title: event.title,
+                url: event.eventURL
+            )
+        } label: {
+            Text("イベントを申し込む")
+        }
     }
 }
 
