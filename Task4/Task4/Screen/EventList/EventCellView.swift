@@ -25,10 +25,6 @@ struct EventCellView: View {
                 title: event.startDate
             ).padding(Edge.Set.bottom, 6.0)
             EventInformationView(
-                image: "person.fill",
-                title: event.ownerName
-            ).padding(Edge.Set.bottom, 6.0)
-            EventInformationView(
                 image: "mappin.and.ellipse",
                 title: event.address
             ).padding(Edge.Set.bottom, 4.0)

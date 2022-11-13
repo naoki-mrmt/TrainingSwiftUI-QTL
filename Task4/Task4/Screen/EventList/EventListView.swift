@@ -14,8 +14,13 @@ struct EventListView: View {
     // MARK: - Body
     var body: some View {
         NavigationView {
-            List(viewModel.events) {
-                EventCellView(event: $0)
+            List(viewModel.events) { event in
+                NavigationLink {
+                    EventDetailView(event: event)
+                } label: {
+                    EventCellView(event: event)
+                }
+
             } //: List
             .onAppear {
                 viewModel.fetchEvent()
