@@ -20,6 +20,7 @@ struct EventInformationView: View {
                 .foregroundColor(.purple)
             Text(title)
         } //: HStack
+        .padding(Edge.Set.bottom, 4.0)
     }
 }
 

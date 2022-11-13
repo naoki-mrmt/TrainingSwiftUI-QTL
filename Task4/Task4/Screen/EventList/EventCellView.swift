@@ -23,11 +23,11 @@ struct EventCellView: View {
             EventInformationView(
                 image: "calendar",
                 title: event.startDate
-            ).padding(Edge.Set.bottom, 6.0)
+            )
             EventInformationView(
                 image: "mappin.and.ellipse",
                 title: event.address
-            ).padding(Edge.Set.bottom, 4.0)
+            )
         } //: VStack
     }
 }
