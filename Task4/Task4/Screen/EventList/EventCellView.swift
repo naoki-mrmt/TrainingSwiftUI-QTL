@@ -25,7 +25,7 @@ struct EventCellView: View {
                 title: event.startDate
             )
             EventInformationView(
-                image: "mappin.and.ellipse",
+                image: "mappin",
                 title: event.address
             )
         } //: VStack
