@@ -13,8 +13,17 @@ struct AsyncImageView: View {
 
     // MARK: - Body
     var body: some View {
-        AsyncImage(url: URL(string: imageURL), transaction: Transaction(animation: .spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0.25))) { phase in
-            switch phase {
+        AsyncImage(
+            url: URL(string: imageURL),
+                transaction: Transaction(
+                    animation: .spring(
+                        response: 0.5,
+                        dampingFraction: 0.6,
+                        blendDuration: 0.25
+                    )
+                )
+            ) {
+            switch $0 {
             case .success(let image):
                 image.imageModifier()
             case .failure, .empty:
