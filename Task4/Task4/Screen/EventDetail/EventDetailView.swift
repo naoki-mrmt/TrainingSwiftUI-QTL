@@ -14,31 +14,31 @@ struct EventDetailView: View {
     // MARK: - Body
     var body: some View {
         VStack(alignment: .leading) {
-            Text("イベント詳細")
+            Text(AppConst.Text.eventDetail)
                 .font(.title)
             AsyncImageView(
-                imageURL: "https://soco-st.com/wp-content/themes/socost/upload/11333_color.png"
+                imageURL: AppConst.URL.eventDetailImage
             )
             .padding(24.0)
             VStack(alignment: .leading) {
-                if event.overview != "" {
-                    Text("概要")
+                if event.overview != AppConst.Text.emptyWords {
+                    Text(AppConst.Text.overview)
                         .font(.title2)
                         .padding(Edge.Set.bottom, 4.0)
                     Text(event.overview)
                         .padding(Edge.Set.bottom, 8.0)
                 }
                 EventInformationView(
-                    image: "calendar",
+                    image: AppConst.Image.calendar,
                     title: event.startDate
                 )
                 EventInformationView(
-                    image: "person.fill",
+                    image: AppConst.Image.person,
                     title: event.ownerName
                 )
-                if event.address  != "" {
+                if event.address  != AppConst.Text.emptyWords {
                     EventInformationView(
-                        image: "mappin",
+                        image: AppConst.Image.mappin,
                         title: event.address
                     )
                 }
@@ -48,7 +48,7 @@ struct EventDetailView: View {
                         url: event.eventURL
                     )
                 } label: {
-                    Text("イベントを申し込む")
+                    Text(AppConst.Text.eventRegistration)
                 }
             } //: VStack
             .padding(Edge.Set.leading, 16.0)

@@ -21,12 +21,12 @@ struct EventCellView: View {
                 .padding(Edge.Set.top, 8.0)
                 .padding(Edge.Set.bottom, 12.0)
             EventInformationView(
-                image: "calendar",
+                image: AppConst.Image.calendar,
                 title: event.startDate
             )
-            if event.address != "" {
+            if event.address != AppConst.Text.emptyWords {
                 EventInformationView(
-                    image: "mappin",
+                    image: AppConst.Image.mappin,
                     title: event.address
                 )
             }

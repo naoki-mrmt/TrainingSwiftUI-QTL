@@ -27,7 +27,7 @@ struct AsyncImageView: View {
             case .success(let image):
                 image.imageModifier()
             case .failure, .empty:
-                Image(systemName: "photo.circle.fill").iconModifier()
+                Image(systemName: AppConst.Image.photo).iconModifier()
             @unknown default:
                 ProgressView()
             }

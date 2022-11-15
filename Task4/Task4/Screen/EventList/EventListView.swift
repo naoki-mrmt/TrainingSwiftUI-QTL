@@ -26,7 +26,7 @@ struct EventListView: View {
                 viewModel.fetchEvent()
             }
             .listStyle(.automatic)
-            .navigationBarTitle("Event")
+            .navigationBarTitle(AppConst.Text.event)
         } //: NavigationView
     }
 }

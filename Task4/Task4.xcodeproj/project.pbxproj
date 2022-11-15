@@ -28,6 +28,7 @@
 		88B79E85291C83C600DE2266 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E84291C83C600DE2266 /* Settings.bundle */; };
 		88FBABC72923EAD800822919 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABC62923EAD800822919 /* AsyncImageView.swift */; };
 		88FBABCA2923EB4A00822919 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABC92923EB4A00822919 /* ImageExtension.swift */; };
+		88FBABCC2923F26200822919 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABCB2923F26200822919 /* AppConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		88B79E84291C83C600DE2266 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		88FBABC62923EAD800822919 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		88FBABC92923EB4A00822919 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		88FBABCB2923F26200822919 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		CBCC36FCC1983BF4760D51D3 /* Pods-Task4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task4.debug.xcconfig"; path = "Target Support Files/Pods-Task4/Pods-Task4.debug.xcconfig"; sourceTree = "<group>"; };
 		EAAD99CDF6782D36DFAB0340 /* Pods-Task4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task4.release.xcconfig"; path = "Target Support Files/Pods-Task4/Pods-Task4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 		88227185291FE44200F34B92 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				88FBABCB2923F26200822919 /* AppConst.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -366,7 +369,7 @@
 		88B79E87291C845400DE2266 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -380,7 +383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint --fix\n";
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -402,6 +405,7 @@
 				8822718D291FE52D00F34B92 /* EventListView.swift in Sources */,
 				882271AE2920D90800F34B92 /* EventDetailView.swift in Sources */,
 				882271A2291FF48900F34B92 /* EventListViewModel.swift in Sources */,
+				88FBABCC2923F26200822919 /* AppConst.swift in Sources */,
 				88B79E77291C82A800DE2266 /* Task4App.swift in Sources */,
 				8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */,
 				88FBABCA2923EB4A00822919 /* ImageExtension.swift in Sources */,
