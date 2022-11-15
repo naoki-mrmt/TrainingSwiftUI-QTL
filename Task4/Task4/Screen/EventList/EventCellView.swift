@@ -24,10 +24,12 @@ struct EventCellView: View {
                 image: "calendar",
                 title: event.startDate
             )
-            EventInformationView(
-                image: "mappin",
-                title: event.address
-            )
+            if event.address != "" {
+                EventInformationView(
+                    image: "mappin",
+                    title: event.address
+                )
+            }
         } //: VStack
     }
 }

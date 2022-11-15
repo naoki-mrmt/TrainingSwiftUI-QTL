@@ -36,10 +36,12 @@ struct EventDetailView: View {
                     image: "person.fill",
                     title: event.ownerName
                 )
-                EventInformationView(
-                    image: "mappin.and.ellipse",
-                    title: event.address
-                )
+                if event.address  != "" {
+                    EventInformationView(
+                        image: "mappin",
+                        title: event.address
+                    )
+                }
                 NavigationLink {
                     SafariView(
                         title: event.title,
