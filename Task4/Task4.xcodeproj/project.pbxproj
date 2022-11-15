@@ -364,7 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
 		};
 		88B79E87291C845400DE2266 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
