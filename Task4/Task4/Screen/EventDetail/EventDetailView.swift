@@ -13,15 +13,47 @@ struct EventDetailView: View {
 
     // MARK: - Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        NavigationLink {
-            SafariView(
-                title: event.title,
-                url: event.eventURL
+        VStack(alignment: .leading) {
+            Text("イベント詳細")
+                .font(.title)
+            AsyncImageView(
+                imageURL: "https://soco-st.com/wp-content/themes/socost/upload/11333_color.png"
             )
-        } label: {
-            Text("イベントを申し込む")
-        }
+            .padding(24.0)
+            VStack(alignment: .leading) {
+                if event.overview != "" {
+                    Text("概要")
+                        .font(.title2)
+                        .padding(Edge.Set.bottom, 4.0)
+                    Text(event.overview)
+                        .padding(Edge.Set.bottom, 8.0)
+                }
+                EventInformationView(
+                    image: "calendar",
+                    title: event.startDate
+                )
+                EventInformationView(
+                    image: "person.fill",
+                    title: event.ownerName
+                )
+                EventInformationView(
+                    image: "mappin.and.ellipse",
+                    title: event.address
+                )
+                NavigationLink {
+                    SafariView(
+                        title: event.title,
+                        url: event.eventURL
+                    )
+                } label: {
+                    Text("イベントを申し込む")
+                }
+            } //: VStack
+            .padding(Edge.Set.leading, 16.0)
+            Spacer()
+        } //: VStack
+        .padding(16.0)
+        .navigationBarTitle(event.title, displayMode: .inline)
     }
 }
 
