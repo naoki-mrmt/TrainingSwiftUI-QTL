@@ -1,6 +1,6 @@
-# Task1
+# Task4
 ## Issue
-- [#9](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/9)
+- [#15](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/15)
 
 ## 環境構築
 ### 事前準備
@@ -14,3 +14,4 @@
 - ```make```
     - 中身 
         - ```bundle exec pod install```
+
