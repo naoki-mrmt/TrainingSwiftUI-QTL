@@ -22,6 +22,7 @@
 		882271AE2920D90800F34B92 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271AD2920D90800F34B92 /* EventDetailView.swift */; };
 		882271B02920D96C00F34B92 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271AF2920D96C00F34B92 /* EventCellView.swift */; };
 		882271B22920DC4000F34B92 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271B12920DC4000F34B92 /* EventInformationView.swift */; };
+		8884DFDF2928E41600E605A3 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */; };
 		88B79E77291C82A800DE2266 /* Task4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E76291C82A800DE2266 /* Task4App.swift */; };
 		88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7A291C82A900DE2266 /* Assets.xcassets */; };
 		88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		882271AD2920D90800F34B92 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		882271AF2920D96C00F34B92 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
 		882271B12920DC4000F34B92 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
+		8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		88B79E73291C82A800DE2266 /* Task4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B79E76291C82A800DE2266 /* Task4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4App.swift; sourceTree = "<group>"; };
 		88B79E7A291C82A900DE2266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				882271AD2920D90800F34B92 /* EventDetailView.swift */,
+				8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */,
 			);
 			path = EventDetail;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				88B79E71291C82A800DE2266 /* Resources */,
 				88B79E86291C83F800DE2266 /* Run LicensePlist */,
 				88B79E87291C845400DE2266 /* Run Swiftlint */,
+				B89645E989828FBADEE12475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +389,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint\n";
 		};
+		B89645E989828FBADEE12475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,6 +421,7 @@
 				8822718F291FE6E300F34B92 /* Events.swift in Sources */,
 				88227197291FED5A00F34B92 /* Request.swift in Sources */,
 				882271B02920D96C00F34B92 /* EventCellView.swift in Sources */,
+				8884DFDF2928E41600E605A3 /* EventDetailViewModel.swift in Sources */,
 				88FBABC72923EAD800822919 /* AsyncImageView.swift in Sources */,
 				882271A0291FF28700F34B92 /* NetworkManager.swift in Sources */,
 				8822718D291FE52D00F34B92 /* EventListView.swift in Sources */,
