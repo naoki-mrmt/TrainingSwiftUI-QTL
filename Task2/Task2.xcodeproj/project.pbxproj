@@ -10,9 +10,12 @@
 		4A7959E0F06A50E30D6248C7 /* Pods_Task2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175CFC8A6EFD823BB87061E5 /* Pods_Task2.framework */; };
 		8807CE9C290001C800509093 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8807CE9B290001C800509093 /* Settings.bundle */; };
 		88409DE028FBE88C00E85B0A /* Task2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88409DDF28FBE88C00E85B0A /* Task2App.swift */; };
-		88409DE228FBE88C00E85B0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88409DE128FBE88C00E85B0A /* ContentView.swift */; };
 		88409DE428FBE88D00E85B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88409DE328FBE88D00E85B0A /* Assets.xcassets */; };
 		88409DE728FBE88D00E85B0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88409DE628FBE88D00E85B0A /* Preview Assets.xcassets */; };
+		884C6832290811DF004EFE0E /* DataTransferSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C6831290811DF004EFE0E /* DataTransferSampleView.swift */; };
+		884C683429081731004EFE0E /* DataTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C683329081731004EFE0E /* DataTransferView.swift */; };
+		88951A6A291287D200E5D961 /* DataBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88951A69291287D200E5D961 /* DataBackView.swift */; };
+		88F1C3FF291883DF001EFDBC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1C3FE291883DF001EFDBC /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +24,12 @@
 		8807CE9B290001C800509093 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		88409DDC28FBE88C00E85B0A /* Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88409DDF28FBE88C00E85B0A /* Task2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2App.swift; sourceTree = "<group>"; };
-		88409DE128FBE88C00E85B0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88409DE328FBE88D00E85B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88409DE628FBE88D00E85B0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		884C6831290811DF004EFE0E /* DataTransferSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferSampleView.swift; sourceTree = "<group>"; };
+		884C683329081731004EFE0E /* DataTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferView.swift; sourceTree = "<group>"; };
+		88951A69291287D200E5D961 /* DataBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBackView.swift; sourceTree = "<group>"; };
+		88F1C3FE291883DF001EFDBC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F4A29610EC93CF8366838363 /* Pods-Task2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.debug.xcconfig"; path = "Target Support Files/Pods-Task2/Pods-Task2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +75,9 @@
 		88409DDE28FBE88C00E85B0A /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
-				88409DDF28FBE88C00E85B0A /* Task2App.swift */,
-				88409DE128FBE88C00E85B0A /* ContentView.swift */,
+				88F1C3FB29188368001EFDBC /* Application */,
+				88F1C3FC29188381001EFDBC /* Screen */,
+				88F1C3FD291883CD001EFDBC /* Utility */,
 				88409DE328FBE88D00E85B0A /* Assets.xcassets */,
 				88409DE528FBE88D00E85B0A /* Preview Content */,
 				8807CE9B290001C800509093 /* Settings.bundle */,
@@ -84,6 +91,32 @@
 				88409DE628FBE88D00E85B0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88F1C3FB29188368001EFDBC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88409DDF28FBE88C00E85B0A /* Task2App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		88F1C3FC29188381001EFDBC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				884C6831290811DF004EFE0E /* DataTransferSampleView.swift */,
+				884C683329081731004EFE0E /* DataTransferView.swift */,
+				88951A69291287D200E5D961 /* DataBackView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		88F1C3FD291883CD001EFDBC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				88F1C3FE291883DF001EFDBC /* Const.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		CC8B71550BA8E0B1C5F89A1D /* Frameworks */ = {
@@ -188,6 +221,7 @@
 		};
 		8807CE992900013000509093 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -202,10 +236,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "#! /bin/sh\n\nif [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint --fix\n";
 		};
 		8807CE9A2900017600509093 /* Run LicensePlist */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -229,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88409DE228FBE88C00E85B0A /* ContentView.swift in Sources */,
+				884C683429081731004EFE0E /* DataTransferView.swift in Sources */,
 				88409DE028FBE88C00E85B0A /* Task2App.swift in Sources */,
+				884C6832290811DF004EFE0E /* DataTransferSampleView.swift in Sources */,
+				88951A6A291287D200E5D961 /* DataBackView.swift in Sources */,
+				88F1C3FF291883DF001EFDBC /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
