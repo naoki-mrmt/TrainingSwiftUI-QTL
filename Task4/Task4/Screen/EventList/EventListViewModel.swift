@@ -28,7 +28,7 @@ extension EventViewModel {
         case .success(let events):
             self.events = events.events
         case .failure(let error):
-            print("error: ", error)
+            print(error)
         }
     }
 }
