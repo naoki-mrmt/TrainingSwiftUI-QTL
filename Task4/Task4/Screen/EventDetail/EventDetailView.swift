@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EventDetailView: View {
+    // MARK: - Property Wrappers
+    @ObservedObject private var vm = EventDetailViewModel()
     // MARK: - Properties
     let event: Event
 
@@ -17,9 +19,12 @@ struct EventDetailView: View {
             Text(AppConst.Text.eventDetail)
                 .font(.title)
             AsyncImageView(
-                imageURL: AppConst.URL.eventDetailImage
+                imageURL: vm.imageURL
             )
             .padding(24.0)
+            .onAppear {
+                vm.fetchImage(pageURL: event.eventURL)
+            }
             VStack(alignment: .leading) {
                 if event.overview != AppConst.Text.emptyWords {
                     Text(AppConst.Text.overview)
