@@ -19,7 +19,7 @@ struct DataTransferSampleView: View {
         NavigationView {
             List {
                 Section(header: Text(TextConst.dataTransfer)) {
-                    TextField("値を入力してください", text: $passValue)
+                    TextField(TextConst.inputValue, text: $passValue)
                     NavigationLink {
                         DataTransferView(value: passValue)
                     } label: {
