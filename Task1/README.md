@@ -1,6 +1,6 @@
-# Task3
+# Task1
 ## Issue
-- [#14](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/14)
+- [#9](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/9)
 
 ## 環境構築
 ### 事前準備
