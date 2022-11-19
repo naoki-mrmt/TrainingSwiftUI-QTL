@@ -22,8 +22,4 @@ enum AppConst {
         static let person = "person.fill"
         static let photo = "photo.circle.fill"
     }
-
-    enum URL {
-        static let eventDetailImage = "https://soco-st.com/wp-content/themes/socost/upload/11333_color.png"
-    }
 }
