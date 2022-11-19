@@ -9,12 +9,12 @@ import SwiftUI
 
 struct EventListView: View {
     // MARK: - Property Wrappers
-    @ObservedObject private var viewModel = EventViewModel()
+    @ObservedObject private var vm = EventViewModel()
 
     // MARK: - Body
     var body: some View {
         NavigationView {
-            List(viewModel.events) { event in
+            List(vm.events) { event in
                 NavigationLink {
                     EventDetailView(event: event)
                 } label: {
@@ -23,7 +23,7 @@ struct EventListView: View {
 
             } //: List
             .onAppear {
-                viewModel.fetchEvent()
+                vm.fetchEvent()
             }
             .listStyle(.automatic)
             .navigationBarTitle(AppConst.Text.event)
