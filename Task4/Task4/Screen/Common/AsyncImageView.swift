@@ -10,19 +10,20 @@ import SwiftUI
 struct AsyncImageView: View {
     // MARK: - Properties
     let imageURL: String
+    private let transaction = Transaction(
+        animation: .spring(
+            response: 0.5,
+            dampingFraction: 0.6,
+            blendDuration: 0.25
+        )
+    )
 
     // MARK: - Body
     var body: some View {
         AsyncImage(
             url: URL(string: imageURL),
-                transaction: Transaction(
-                    animation: .spring(
-                        response: 0.5,
-                        dampingFraction: 0.6,
-                        blendDuration: 0.25
-                    )
-                )
-            ) {
+            transaction: transaction
+        ) {
             switch $0 {
             case .success(let image):
                 image.imageModifier()

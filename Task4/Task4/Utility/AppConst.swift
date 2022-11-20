@@ -22,4 +22,12 @@ enum AppConst {
         static let person = "person.fill"
         static let photo = "photo.circle.fill"
     }
+
+    enum Size {
+        static let padding4 = 4.0
+        static let padding8 = 8.0
+        static let padding12 = 12.0
+        static let padding16 = 16.0
+        static let padding24 = 24.0
+    }
 }

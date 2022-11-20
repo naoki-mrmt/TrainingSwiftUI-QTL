@@ -29,9 +29,9 @@ struct EventDetailView: View {
                 if event.overview != AppConst.Text.emptyWords {
                     Text(AppConst.Text.overview)
                         .font(.title2)
-                        .padding(Edge.Set.bottom, 4.0)
+                        .padding(Edge.Set.bottom, AppConst.Size.padding4)
                     Text(event.overview)
-                        .padding(Edge.Set.bottom, 8.0)
+                        .padding(Edge.Set.bottom, AppConst.Size.padding8)
                 }
                 EventInformationView(
                     image: AppConst.Image.calendar,
@@ -56,10 +56,10 @@ struct EventDetailView: View {
                     Text(AppConst.Text.eventRegistration)
                 }
             } //: VStack
-            .padding(Edge.Set.leading, 16.0)
+            .padding(Edge.Set.leading, AppConst.Size.padding16)
             Spacer()
         } //: VStack
-        .padding(16.0)
+        .padding(AppConst.Size.padding16)
         .navigationBarTitle(event.title, displayMode: .inline)
     }
 }

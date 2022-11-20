@@ -18,8 +18,8 @@ struct EventCellView: View {
                 .bold()
                 .font(.headline)
                 .lineLimit(2)
-                .padding(Edge.Set.top, 8.0)
-                .padding(Edge.Set.bottom, 12.0)
+                .padding(Edge.Set.top, AppConst.Size.padding8)
+                .padding(Edge.Set.bottom, AppConst.Size.padding12)
             EventInformationView(
                 image: AppConst.Image.calendar,
                 title: event.startDate
