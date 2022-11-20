@@ -9,4 +9,5 @@ install! 'cocoapods',
 target 'Task4' do
   pod 'SwiftLint'
   pod 'LicensePlist'
+  pod 'OpenGraph'
 end

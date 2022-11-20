@@ -14,4 +14,5 @@
 - ```make```
     - 中身 
         - ```bundle exec pod install```
+        - ```open ./Task4.xcworkspace```
 

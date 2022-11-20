@@ -8,21 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		7535844A38EC65615CFD5609 /* Pods_Task4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8578372490DC15DA07E90BBE /* Pods_Task4.framework */; };
+		8822718D291FE52D00F34B92 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822718C291FE52D00F34B92 /* EventListView.swift */; };
+		8822718F291FE6E300F34B92 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822718E291FE6E300F34B92 /* Events.swift */; };
+		88227191291FE70B00F34B92 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88227190291FE70B00F34B92 /* Event.swift */; };
+		88227195291FECFD00F34B92 /* ConnpassAPIURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88227194291FECFD00F34B92 /* ConnpassAPIURL.plist */; };
+		88227197291FED5A00F34B92 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88227196291FED5A00F34B92 /* Request.swift */; };
+		8822719C291FF0C600F34B92 /* URLPlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719B291FF0C600F34B92 /* URLPlistManager.swift */; };
+		8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719D291FF15B00F34B92 /* ConnpassAPI.swift */; };
+		882271A0291FF28700F34B92 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822719F291FF28700F34B92 /* NetworkManager.swift */; };
+		882271A2291FF48900F34B92 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271A1291FF48900F34B92 /* EventListViewModel.swift */; };
+		882271A92920D42800F34B92 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271A82920D42800F34B92 /* WebView.swift */; };
+		882271AB2920D54A00F34B92 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271AA2920D54A00F34B92 /* SafariView.swift */; };
+		882271AE2920D90800F34B92 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271AD2920D90800F34B92 /* EventDetailView.swift */; };
+		882271B02920D96C00F34B92 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271AF2920D96C00F34B92 /* EventCellView.swift */; };
+		882271B22920DC4000F34B92 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882271B12920DC4000F34B92 /* EventInformationView.swift */; };
+		8884DFDF2928E41600E605A3 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */; };
 		88B79E77291C82A800DE2266 /* Task4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E76291C82A800DE2266 /* Task4App.swift */; };
-		88B79E79291C82A800DE2266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B79E78291C82A800DE2266 /* ContentView.swift */; };
 		88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7A291C82A900DE2266 /* Assets.xcassets */; };
 		88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */; };
 		88B79E85291C83C600DE2266 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88B79E84291C83C600DE2266 /* Settings.bundle */; };
+		88FBABC72923EAD800822919 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABC62923EAD800822919 /* AsyncImageView.swift */; };
+		88FBABCA2923EB4A00822919 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABC92923EB4A00822919 /* ImageExtension.swift */; };
+		88FBABCC2923F26200822919 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBABCB2923F26200822919 /* AppConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8578372490DC15DA07E90BBE /* Pods_Task4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8822718C291FE52D00F34B92 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		8822718E291FE6E300F34B92 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		88227190291FE70B00F34B92 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		88227194291FECFD00F34B92 /* ConnpassAPIURL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConnpassAPIURL.plist; sourceTree = "<group>"; };
+		88227196291FED5A00F34B92 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8822719B291FF0C600F34B92 /* URLPlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPlistManager.swift; sourceTree = "<group>"; };
+		8822719D291FF15B00F34B92 /* ConnpassAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassAPI.swift; sourceTree = "<group>"; };
+		8822719F291FF28700F34B92 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		882271A1291FF48900F34B92 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		882271A82920D42800F34B92 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		882271AA2920D54A00F34B92 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		882271AD2920D90800F34B92 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		882271AF2920D96C00F34B92 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
+		882271B12920DC4000F34B92 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
+		8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		88B79E73291C82A800DE2266 /* Task4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B79E76291C82A800DE2266 /* Task4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task4App.swift; sourceTree = "<group>"; };
-		88B79E78291C82A800DE2266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88B79E7A291C82A900DE2266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88B79E84291C83C600DE2266 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		88FBABC62923EAD800822919 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		88FBABC92923EB4A00822919 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		88FBABCB2923F26200822919 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		CBCC36FCC1983BF4760D51D3 /* Pods-Task4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task4.debug.xcconfig"; path = "Target Support Files/Pods-Task4/Pods-Task4.debug.xcconfig"; sourceTree = "<group>"; };
 		EAAD99CDF6782D36DFAB0340 /* Pods-Task4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task4.release.xcconfig"; path = "Target Support Files/Pods-Task4/Pods-Task4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +73,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88227185291FE44200F34B92 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				88FBABCB2923F26200822919 /* AppConst.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		88227186291FE45800F34B92 /* URLPlist */ = {
+			isa = PBXGroup;
+			children = (
+				88227194291FECFD00F34B92 /* ConnpassAPIURL.plist */,
+			);
+			path = URLPlist;
+			sourceTree = "<group>";
+		};
+		88227187291FE46300F34B92 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				882271A62920D3F100F34B92 /* Common */,
+				8822718B291FE51D00F34B92 /* EventList */,
+				882271AC2920D8EB00F34B92 /* EventDetail */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		88227188291FE46C00F34B92 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				88227196291FED5A00F34B92 /* Request.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		88227189291FE47200F34B92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8822719A291FEE3600F34B92 /* API */,
+				88227199291FEDFD00F34B92 /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8822718A291FE47B00F34B92 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88B79E76291C82A800DE2266 /* Task4App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8822718B291FE51D00F34B92 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				8822718C291FE52D00F34B92 /* EventListView.swift */,
+				882271A1291FF48900F34B92 /* EventListViewModel.swift */,
+				882271AF2920D96C00F34B92 /* EventCellView.swift */,
+				882271B12920DC4000F34B92 /* EventInformationView.swift */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		88227198291FEDEE00F34B92 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8822719B291FF0C600F34B92 /* URLPlistManager.swift */,
+				8822719F291FF28700F34B92 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		88227199291FEDFD00F34B92 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8822718E291FE6E300F34B92 /* Events.swift */,
+				88227190291FE70B00F34B92 /* Event.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8822719A291FEE3600F34B92 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8822719D291FF15B00F34B92 /* ConnpassAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		882271A62920D3F100F34B92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				882271A72920D40E00F34B92 /* UIViewRepresentable */,
+				882271AA2920D54A00F34B92 /* SafariView.swift */,
+				88FBABC62923EAD800822919 /* AsyncImageView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		882271A72920D40E00F34B92 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				882271A82920D42800F34B92 /* WebView.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+		882271AC2920D8EB00F34B92 /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				882271AD2920D90800F34B92 /* EventDetailView.swift */,
+				8884DFDE2928E41600E605A3 /* EventDetailViewModel.swift */,
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
 		88B79E6A291C82A800DE2266 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +209,14 @@
 		88B79E75291C82A800DE2266 /* Task4 */ = {
 			isa = PBXGroup;
 			children = (
-				88B79E76291C82A800DE2266 /* Task4App.swift */,
-				88B79E78291C82A800DE2266 /* ContentView.swift */,
+				8822718A291FE47B00F34B92 /* Application */,
+				88227189291FE47200F34B92 /* Model */,
+				88227198291FEDEE00F34B92 /* Manager */,
+				88227188291FE46C00F34B92 /* Protocol */,
+				88227187291FE46300F34B92 /* Screen */,
+				88FBABC82923EB2700822919 /* Extension */,
+				88227186291FE45800F34B92 /* URLPlist */,
+				88227185291FE44200F34B92 /* Utility */,
 				88B79E7A291C82A900DE2266 /* Assets.xcassets */,
 				88B79E7C291C82A900DE2266 /* Preview Content */,
 				88B79E84291C83C600DE2266 /* Settings.bundle */,
@@ -75,6 +230,14 @@
 				88B79E7D291C82A900DE2266 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88FBABC82923EB2700822919 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				88FBABC92923EB4A00822919 /* ImageExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8AEFFDB5D8B9294E0C04A141 /* Frameworks */ = {
@@ -107,6 +270,7 @@
 				88B79E71291C82A800DE2266 /* Resources */,
 				88B79E86291C83F800DE2266 /* Run LicensePlist */,
 				88B79E87291C845400DE2266 /* Run Swiftlint */,
+				B89645E989828FBADEE12475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88227195291FECFD00F34B92 /* ConnpassAPIURL.plist in Resources */,
 				88B79E7E291C82A900DE2266 /* Preview Assets.xcassets in Resources */,
 				88B79E85291C83C600DE2266 /* Settings.bundle in Resources */,
 				88B79E7B291C82A900DE2266 /* Assets.xcassets in Resources */,
@@ -203,12 +368,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n";
 		};
 		88B79E87291C845400DE2266 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -222,7 +387,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint --fix\n";
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint\n";
+		};
+		B89645E989828FBADEE12475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task4/Pods-Task4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -231,8 +413,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B79E79291C82A800DE2266 /* ContentView.swift in Sources */,
+				882271B22920DC4000F34B92 /* EventInformationView.swift in Sources */,
+				8822719C291FF0C600F34B92 /* URLPlistManager.swift in Sources */,
+				882271AB2920D54A00F34B92 /* SafariView.swift in Sources */,
+				882271A92920D42800F34B92 /* WebView.swift in Sources */,
+				88227191291FE70B00F34B92 /* Event.swift in Sources */,
+				8822718F291FE6E300F34B92 /* Events.swift in Sources */,
+				88227197291FED5A00F34B92 /* Request.swift in Sources */,
+				882271B02920D96C00F34B92 /* EventCellView.swift in Sources */,
+				8884DFDF2928E41600E605A3 /* EventDetailViewModel.swift in Sources */,
+				88FBABC72923EAD800822919 /* AsyncImageView.swift in Sources */,
+				882271A0291FF28700F34B92 /* NetworkManager.swift in Sources */,
+				8822718D291FE52D00F34B92 /* EventListView.swift in Sources */,
+				882271AE2920D90800F34B92 /* EventDetailView.swift in Sources */,
+				882271A2291FF48900F34B92 /* EventListViewModel.swift in Sources */,
+				88FBABCC2923F26200822919 /* AppConst.swift in Sources */,
 				88B79E77291C82A800DE2266 /* Task4App.swift in Sources */,
+				8822719E291FF15B00F34B92 /* ConnpassAPI.swift in Sources */,
+				88FBABCA2923EB4A00822919 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
