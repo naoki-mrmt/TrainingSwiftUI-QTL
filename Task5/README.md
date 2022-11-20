@@ -1,6 +1,6 @@
 # Task5
 ## Issue
-- TBD
+- [#25](https://github.com/naoki-mrmt/TrainingSwiftUI-QTL/issues/25)
 
 ## 環境構築
 ### 事前準備
