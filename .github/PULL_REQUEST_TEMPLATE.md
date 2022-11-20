@@ -19,7 +19,7 @@ TBD
 ## Checklist
 
 - [ ] Format code with SwiftLint (<kbd>⌘B</kbd> in Xcode)
-- [ ] Set Reviewers, Assignees, Linked issues
+- [ ] Assignees, Linked issues
 
 ## What to check (Optional)
 
