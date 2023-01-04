@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+    paths-ignore:
+      - Docs/**
+      - README.md
+  pull_request:
+    branches:
+      - develop
+    paths-ignore:
+      - Docs/**
+      - README.md
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_14.2.app
+
+jobs:
+  test:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Show Xcode list
+      run: ls /Applications | grep 'Xcode'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Install Bundled Gems
+      run: |
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+    - name: Cache Pods
+      uses: actions/cache@v3
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+    - name: Install Pods
+      run: bundle exec pod install
+    - name: Xcode build
+      run: make Xcode-build
+    # テストが入っていないため一旦コメントアウト
+#    - name: Convert Code coverage to HTML
+#      run: bundle exec slather coverage --html --output-directory html_report
+    - uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: build/reports
+    - uses: actions/upload-artifact@v3
+      with:
+        name: test-coverage
+        path: html_report
